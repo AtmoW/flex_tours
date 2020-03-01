@@ -18,7 +18,7 @@ class ToursSearch extends Tours
     {
         return [
             [['id'], 'integer'],
-            [['title', 'description', 'start', 'end', 'direction', 'photo_src', 'url'], 'safe'],
+            [['title', 'description', 'start', 'end', 'direction', 'photo_src'], 'safe'],
             [['price'], 'number'],
         ];
     }

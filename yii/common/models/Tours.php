@@ -3,7 +3,6 @@
 namespace common\models;
 use yii\helpers\BaseFileHelper;
 use yii\web\UploadedFile;
-
 use Yii;
 
 /**
@@ -17,11 +16,10 @@ use Yii;
  * @property float $price
  * @property string $direction
  * @property string $photo_src
- * @property string $url
  */
 class Tours extends \yii\db\ActiveRecord
 {
-
+    public $imageFile;
     /**
      * {@inheritdoc}
      */
@@ -36,13 +34,20 @@ class Tours extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'description', 'start', 'end', 'price', 'direction', 'photo_src', 'url'], 'required'],
+            [['title', 'description', 'start', 'end', 'price', 'direction', 'photo_src'], 'required'],
             [['description', 'direction'], 'string'],
             [['start', 'end'], 'safe'],
             [['price'], 'number'],
             [['title'], 'string', 'max' => 50],
-            [['photo_src', 'url'], 'string', 'max' => 150],
+            [['photo_src'], 'string', 'max' => 150],
+            [['imageFile'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg, jpeg'],
         ];
+    }
+
+    public function upload()
+    {
+            $this->imageFile->saveAs(Yii::getAlias('@images').'/'. '321' . '.' . $this->imageFile->extension);
+            return true;
     }
 
     /**
@@ -59,7 +64,7 @@ class Tours extends \yii\db\ActiveRecord
             'price' => 'Цена',
             'direction' => 'Направление',
             'photo_src' => 'Картинка',
-            'url' => 'Url',
+            'imageFile' => 'Картинка',
         ];
     }
 }
