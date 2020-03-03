@@ -8,7 +8,7 @@ $this->title = 'Flex tours';
 
     <div class="body-content">
         <div class="jumbotron">
-            <h1>Flex tours</h1>
+            <h1>Flex Tours</h1>
             <?=\yii\helpers\Html::a('Перейти в каталог', ['/tours'],['class'=>'btn btn-success'])?>
         </div>
 

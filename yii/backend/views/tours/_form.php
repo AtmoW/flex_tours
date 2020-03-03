@@ -10,7 +10,6 @@ use dosamigos\datepicker\DateRangePicker;
 ?>
 
 <div class="tours-form">
-    <?=Yii::getAlias('@images')?>
 
     <?php $form = ActiveForm::begin(); ?>
 
@@ -33,7 +32,10 @@ use dosamigos\datepicker\DateRangePicker;
 
     <?= $form->field($model, 'price')->textInput() ?>
 
-    <?= $form->field($model, 'imageFile')->fileInput(['maxlength' => true]) ?>
+     <? if (!$model->isNewRecord) : ?>
+         <?=Html::img(str_replace('admin','flex',\yii\helpers\Url::home(true)).'images'.$model->photo_src,['class' => 'img-thumbnail'])?>
+     <? endif; ?>
+         <?= $form->field($model, 'imageFile')->fileInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

@@ -6,9 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/2amigos/yii2-date-picker-widget" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/behat/gherkin" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/borales/yii2-phone-input" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/bootstrap-datepicker" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/inputmask" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/intl-tel-input" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/jquery" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/punycode" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/yii2-pjax" />
@@ -28,11 +30,14 @@
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/ezyang/htmlpurifier" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/giggsey/libphonenumber-for-php" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/giggsey/locale" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/kartik-v/bootstrap-fileinput" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/kartik-v/yii2-krajee-base" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/kartik-v/yii2-widget-fileinput" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/npm-asset/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/opis/closure" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phar-io/version" />
@@ -78,10 +83,12 @@
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/udokmeci/yii2-phone-validator" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/vova07/yii2-imperavi-widget" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/yiisoft/yii2" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/yiisoft/yii2-bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/yiisoft/yii2-bootstrap4" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/yiisoft/yii2-composer" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/yiisoft/yii2-debug" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/yiisoft/yii2-faker" />

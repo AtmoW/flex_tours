@@ -32,9 +32,14 @@ class ToursController extends Controller
         $tours = Tours::find()->all();
         return $this->render('all_tours',['tours'=>$tours]);
     }
-    public function actionOne($url)
+    public function actionOne($id)
     {
-        $tour = Tours::find()->andWhere(['url'=>$url])->one();
+        $tour = Tours::find()->andWhere(['id'=>$id])->one();
         return $this->render('one_tour',['tour'=>$tour]);
+    }
+    public function actionOrder($id)
+    {
+        $tour = Tours::find()->andWhere(['id'=>$id])->one();
+        return $this->render('order',['tour'=>$tour]);
     }
 }

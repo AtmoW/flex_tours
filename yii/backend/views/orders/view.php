@@ -2,17 +2,16 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Tours */
+/* @var $model common\models\Orders */
 
-$this->title = $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Tours', 'url' => ['index']];
+$this->title = $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Orders', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="tours-view">
+<div class="orders-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -26,17 +25,14 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
-    <?=Html::img(str_replace('admin','flex',Url::home(true)).'images'.$model->photo_src,['class' => 'img-thumbnail'])?>
+
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id',
-            'title',
-            'description:ntext',
-            'start',
-            'end',
-            'price',
-            'direction:ntext',
+            'tour_id',
+            'phone',
+            'name',
         ],
     ]) ?>
 

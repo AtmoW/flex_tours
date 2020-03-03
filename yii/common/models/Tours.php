@@ -46,7 +46,9 @@ class Tours extends \yii\db\ActiveRecord
 
     public function upload()
     {
-            $this->imageFile->saveAs(Yii::getAlias('@images').'/'. '321' . '.' . $this->imageFile->extension);
+            $filename = '/'.strtotime('now').'_'.Yii::$app->getSecurity()->generateRandomString(2). '' . '.' . $this->imageFile->extension;
+            $this->imageFile->saveAs(Yii::getAlias('@images').$filename);
+            $this->photo_src = $filename;
             return true;
     }
 

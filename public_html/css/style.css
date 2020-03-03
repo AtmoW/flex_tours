@@ -1,0 +1,10 @@
+.row{
+    margin-bottom: 20px;
+}
+.img-box{
+    height: 200px;
+
+}
+.img-box img{
+    height: 100%;
+}

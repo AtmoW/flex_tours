@@ -85,6 +85,13 @@
       <path value="$PROJECT_DIR$/yii/vendor/kartik-v/bootstrap-fileinput" />
       <path value="$PROJECT_DIR$/yii/vendor/kartik-v/yii2-krajee-base" />
       <path value="$PROJECT_DIR$/yii/vendor/kartik-v/yii2-widget-fileinput" />
+      <path value="$PROJECT_DIR$/yii/vendor/npm-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/yii/vendor/yiisoft/yii2-bootstrap4" />
+      <path value="$PROJECT_DIR$/yii/vendor/giggsey/locale" />
+      <path value="$PROJECT_DIR$/yii/vendor/giggsey/libphonenumber-for-php" />
+      <path value="$PROJECT_DIR$/yii/vendor/udokmeci/yii2-phone-validator" />
+      <path value="$PROJECT_DIR$/yii/vendor/borales/yii2-phone-input" />
+      <path value="$PROJECT_DIR$/yii/vendor/bower-asset/intl-tel-input" />
     </include_path>
   </component>
 </project>
